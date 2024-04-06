@@ -1,0 +1,16 @@
+// SV 2009 - Parameter file for image processing program for 2P microscopy (MGH version)
+0	; 1 - debug on, all residuals will be printed in individual files
+0	; pulse length (us) - do not change
+0	; decay start (us) - do not change
+5	; 'threshold' - minimal number of non-zero pixels in the beginning of the decay
+1	; fitting model: 1-single exp, 2-double exp; 3-triple exp
+0	; 1 - use Possion statistics, 0 - normal statistics
+0	; 1 - use the same baseline for all pixels in the image
+268	; Kq
+50.1	; tau_0 (us)
+1	; non-linear Stern-Volmer (pO2=A0 + A1*exp(-tau/t1) + A2*exp(-tau/t2))
+-18.8533458785921
+166.062669454885
+17.7515658726037
+585.449747064441
+4.21951599885699

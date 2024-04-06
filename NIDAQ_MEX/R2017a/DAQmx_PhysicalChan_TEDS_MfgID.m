@@ -1,0 +1,5 @@
+% Copyright 2010 - 2015 The MathWorks, Inc.
+function x = DAQmx_PhysicalChan_TEDS_MfgID
+    x = 8666; % 0x21DA
+end
+

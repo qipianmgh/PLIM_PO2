@@ -1,0 +1,36 @@
+// SV 2022-08  Parameters for exponential decay analysis: MGH input data format (Sava & Ikbal)
+0	; lines to skip in the beginning of the file
+0	; 1 - debug ON (executes decays one by one and outputs all 'intermediates'), 0 - automatic processing.
+16	; size of each data entry in the input file (characters per datum)
+1e-6	; time units (in s)
+0	; start decay analysis from this time point (s)
+0	; end decay analysis at this time point (s); 0 for complete decay
+5	; minimal number of non-zero values in the beginning of the decay
+1	; fitting model: 0-log fit, 1-single exp, 2-double exp; 3-triple exp
+0	; 0 - initial intensity-based lifetime averaging; 1 - integrated intensity-based averaging
+0	; 1 - use Possion statistics, 0 - normal statistics
+20	; number of points at the end of the decay to initially estimate the baseline
+0	; 1 - use the same baseline for all decays
+0	; baseline value for all decays (if the above toggle is 1)
+0	; integrate the decay starting at each time point onwards (as in CCD-based stroboscopic imaging)
+3e-4	; width (maximal) of the integration time window (if the toggle above is ON); the window will be shrinking as we progress towards the end of the decay.
+5e-4	; decay length for analysis in stroboscopic mode (if the toggle above is ON).
+1e-20	; delta Chi^2 convergence criterion
+1e-7	; gradient norm convergence criterion
+578.67	; Kq
+38.52e-6	; tau_0 (s)
+2	; if not 0, use non-linear quenching plot: 1-exponential form, 2-non-linear Stern-Volmer form (temperature in oC)
+// bi-exponential form: pO2=a0+a1*exp(-tau/a3)+A2*exp(-tau/a4))
+-54.4110790551
+131.202787947
+3.9008238573E-5
+798.503313583
+7.1386E-6
+// modified Stern-Volmer form (see Ox2P paper and Appendix)
+1.265776950	; p
+14.8		; a
+106.1337;	; kq0
+18.89122;	; beta
+3.96441e-5	; tau00 (s)
+-5.94517e-8	; alfa
+// temperature in oC

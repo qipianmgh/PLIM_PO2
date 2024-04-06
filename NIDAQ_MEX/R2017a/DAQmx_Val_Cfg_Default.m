@@ -1,0 +1,5 @@
+% Copyright 2010 - 2015 The MathWorks, Inc.
+function x = DAQmx_Val_Cfg_Default
+    x = int32(-1);
+end
+

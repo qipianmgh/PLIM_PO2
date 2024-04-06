@@ -1,0 +1,8 @@
+% Copyright 2010 - 2015 The MathWorks, Inc.
+function [status] = DAQmxResetExportedSignalAttribute(taskHandle, attribute)
+    narginchk(2, 2);
+    nargoutchk(1, 1);
+    validateattributes(taskHandle, {'uint64'}, {'scalar'}, 'DAQmxResetExportedSignalAttribute', 'taskHandle', 1);
+    validateattributes(attribute, {'int32'}, {'scalar'}, 'DAQmxResetExportedSignalAttribute', 'attribute', 2);
+    [status]= mexNIDAQmx('DAQmxResetExportedSignalAttribute', taskHandle, attribute);
+end
